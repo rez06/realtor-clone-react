@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 export function useAuthStatus() {
     const [loggedIn, setLoggedin] = useState(false);
     const [checkingStatus, setCheckingStatus] = useState(true);
+    
 
     useEffect(() => {
         const auth = getAuth();
